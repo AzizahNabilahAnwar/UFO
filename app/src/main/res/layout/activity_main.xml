@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B6E388"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+
+    <RelativeLayout>
+        <ImageView
+            android:src="@drawable/pattern_bg"
+            android:id="@+id/pattern_bg"
+            android:scaleType="fitXY"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/sugar_snow"
+        android:gravity="center_horizontal"
+        android:text="Welcome!"
+        android:textColor="#ffffff"
+        android:textSize="32dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/quote"
+        android:text="Let's Start Your Journey With Us!"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:fontFamily="@font/sugar_snow"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"
+        android:textColor="#ffffff"/>
+
+    <ImageView
+        android:src="@drawable/anak_kampus"
+        android:id="@+id/anak_kampus"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_margin="50dp"
+        android:gravity="center_vertical"
+        />
+
+    <Button
+        android:id="@+id/btn_letgo"
+        android:layout_width="160dp"
+        android:layout_height="70dp"
+        android:layout_marginRight="130dp"
+        android:layout_marginLeft="130dp"
+        android:text="Let's Go!"
+        android:radius="20dp"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:backgroundTint="#FCFFB2"
+        app:cornerRadius="15dp"
+        android:onClick="Pindah"/>
+</LinearLayout>

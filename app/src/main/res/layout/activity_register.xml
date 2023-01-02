@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B6E388"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:src="@drawable/back_btn"
+        android:id="@+id/back_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:onClick="Move_to_Main"/>
+
+    <ImageView
+        android:src="@drawable/logo"
+        android:id="@+id/anak_kampus"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginRight="110dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center_vertical" />
+
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/DOB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="Date Of Birth"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"/>
+
+    <EditText
+        android:id="@+id/Class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName"
+        android:hint="Class" />
+
+    <Button
+        android:id="@+id/btn_signUp"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="140dp"
+        android:layout_marginLeft="140dp"
+        android:text="Sign Up"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        app:cornerRadius="15dp"
+        android:backgroundTint ="#FCFFB2"
+        />
+
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:text="Register Now!"
+        android:fontFamily="@font/jura_medium"
+        android:textSize="15dp"
+        android:textColor="#808080"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginBottom="10dp"/>
+
+</LinearLayout>
