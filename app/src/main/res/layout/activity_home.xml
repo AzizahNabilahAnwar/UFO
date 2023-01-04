@@ -4,6 +4,77 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
     tools:context=".HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="900px"
+        android:background="#E1FFB1"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/josefin_slab_semi_bold"
+            android:gravity="center_horizontal"
+            android:text="Mulailah Impianmu memasuki Perguruan tinggi yang diinginkan"
+            android:textColor="#000000"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:src="@drawable/home_pic"
+            android:id="@+id/home_pic"
+            android:layout_width="270dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="160dp"
+            />
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="1000px"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="340dp"
+        android:numColumns="auto_fit"
+        android:numRows="auto_fit">
+
+        <ImageButton
+            android:src="@drawable/information"
+            android:id="@+id/btn_kotak"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_margin="30dp" />
+
+        <ImageButton
+            android:src="@drawable/course"
+            android:id="@+id/course"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_margin="30dp" />
+
+        <ImageButton
+            android:id="@+id/tips"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_margin="30dp"
+            android:src="@drawable/tips" />
+
+        <ImageButton
+            android:id="@+id/profile"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_margin="30dp"
+            android:src="@drawable/profile_btn" />
+    </GridLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
