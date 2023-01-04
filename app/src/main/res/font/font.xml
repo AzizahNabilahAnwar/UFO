@@ -9,4 +9,9 @@
         android:fontStyle="normal"
         android:fontWeight="400"
         android:font="@font/jura_medium" />
+    
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/josefin_slab_semi_bold" />
 </font-family>
